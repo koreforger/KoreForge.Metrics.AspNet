@@ -21,8 +21,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: koreforger/KoreForge.Metrics
-          path: ../KoreForge.Metrics
+          path: dep/KoreForge.Metrics
           fetch-depth: 0
+
+      - name: Link KoreForge.Metrics as sibling
+        run: ln -s "${{ github.workspace }}/dep/KoreForge.Metrics" "${{ github.workspace }}/../KoreForge.Metrics"
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
