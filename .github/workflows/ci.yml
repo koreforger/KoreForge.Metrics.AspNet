@@ -17,6 +17,13 @@ jobs:
         with:
           fetch-depth: 0        # MinVer needs full history to compute version
 
+      - name: Checkout KoreForge.Metrics (dependency)
+        uses: actions/checkout@v4
+        with:
+          repository: koreforger/KoreForge.Metrics
+          path: ../KoreForge.Metrics
+          fetch-depth: 0
+
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -31,6 +38,9 @@ jobs:
       - name: Test with coverage
         run: |
           dotnet test KoreForge.Metrics.AspNet.sln -c Debug --no-build \
+            /p:CollectCoverage=true \
+            /p:CoverletOutputFormat=cobertura \
+            "/p:CoverletOutput=../../out/TestResults/raw/coverage.cobertura.xml" \
             --logger "html;LogFileName=TestResults.html" \
             --results-directory out/TestResults
 
