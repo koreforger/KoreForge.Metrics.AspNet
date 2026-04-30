@@ -5,8 +5,8 @@ param(
 
 Push-Location (Resolve-Path "$PSScriptRoot\..")
 try {
-    dotnet build KoreForge.Metrics.AspNet.sln --force -c $Configuration
-    dotnet test  KoreForge.Metrics.AspNet.sln -c $Configuration --no-build `
+    dotnet build KoreForge.Metrics.AspNet.slnx --force -c $Configuration
+    dotnet test  KoreForge.Metrics.AspNet.slnx -c $Configuration --no-build `
         --logger "html;LogFileName=TestResults.html" `
         --results-directory out/TestResults
     Write-Host 'Test results: out/TestResults/TestResults.html' -ForegroundColor Green
