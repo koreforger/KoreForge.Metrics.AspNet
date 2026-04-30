@@ -36,11 +36,11 @@ jobs:
         run: dotnet tool restore
 
       - name: Build
-        run: dotnet build KoreForge.Metrics.AspNet.sln -c Debug
+        run: dotnet build KoreForge.Metrics.AspNet.slnx -c Debug
 
       - name: Test with coverage
         run: |
-          dotnet test KoreForge.Metrics.AspNet.sln -c Debug --no-build \
+          dotnet test KoreForge.Metrics.AspNet.slnx -c Debug --no-build \
             /p:CollectCoverage=true \
             /p:CoverletOutputFormat=cobertura \
             "/p:CoverletOutput=../../out/TestResults/raw/coverage.cobertura.xml" \
