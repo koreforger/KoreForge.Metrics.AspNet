@@ -26,10 +26,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Build
-        run: dotnet build KoreForge.Metrics.AspNet.sln -c Release
+        run: dotnet build KoreForge.Metrics.AspNet.slnx -c Release
 
       - name: Test
-        run: dotnet test KoreForge.Metrics.AspNet.sln -c Release --no-build
+        run: dotnet test KoreForge.Metrics.AspNet.slnx -c Release --no-build
 
       - name: Pack
         run: dotnet pack src/KF.Metrics.AspNet/KF.Metrics.AspNet.csproj -c Release --no-build -o artifacts/
