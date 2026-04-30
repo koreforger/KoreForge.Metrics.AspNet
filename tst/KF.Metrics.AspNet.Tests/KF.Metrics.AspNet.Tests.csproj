@@ -29,8 +29,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="KoreForge.Metrics" Version="0.0.10-alpha" />
     <ProjectReference Include="..\..\src\KF.Metrics.AspNet\KF.Metrics.AspNet.csproj" />
-    <ProjectReference Include="..\..\..\KoreForge.Metrics\src\KF.Metrics\KF.Metrics.csproj" />
   </ItemGroup>
 
   <ItemGroup>
