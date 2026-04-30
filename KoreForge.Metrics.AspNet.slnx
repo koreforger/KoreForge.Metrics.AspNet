@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/src/">
+    <Project Path="src/KF.Metrics.AspNet/KF.Metrics.AspNet.csproj" />
+  </Folder>
+  <Folder Name="/tst/">
+    <Project Path="tst/KF.Metrics.AspNet.Tests/KF.Metrics.AspNet.Tests.csproj" />
+  </Folder>
+  <Project Path="../KoreForge.Metrics/src/KF.Metrics/KF.Metrics.csproj" />
+</Solution>
