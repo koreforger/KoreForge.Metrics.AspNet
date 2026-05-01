@@ -30,7 +30,7 @@
 
   <ItemGroup>
     <PackageReference Include="KoreForge.Metrics" Version="0.0.10-alpha" />
-    <ProjectReference Include="..\..\src\KF.Metrics.AspNet\KF.Metrics.AspNet.csproj" />
+    <PackageReference Include="KoreForge.Metrics.AspNet" VersionOverride="1.0.1-alpha" />
   </ItemGroup>
 
   <ItemGroup>
