@@ -5,10 +5,10 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/src/">
-    <Project Path="src/KF.Metrics.AspNet/KF.Metrics.AspNet.csproj" />
+    <Project Path="src/KoreForge.Metrics.AspNet/KoreForge.Metrics.AspNet.csproj" />
   </Folder>
   <Folder Name="/tst/">
-    <Project Path="tst/KF.Metrics.AspNet.Tests/KF.Metrics.AspNet.Tests.csproj" />
+    <Project Path="tst/KoreForge.Metrics.AspNet.Tests/KoreForge.Metrics.AspNet.Tests.csproj" />
   </Folder>
 
 </Solution>

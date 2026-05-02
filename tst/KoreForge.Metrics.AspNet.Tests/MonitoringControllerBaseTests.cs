@@ -1,9 +1,9 @@
 using System;
-using KF.Metrics;
-using KF.Metrics.AspNet;
+using KoreForge.Metrics;
+using KoreForge.Metrics.AspNet;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KF.Metrics.AspNet.Tests;
+namespace KoreForge.Metrics.AspNet.Tests;
 
 public class MonitoringControllerBaseTests
 {

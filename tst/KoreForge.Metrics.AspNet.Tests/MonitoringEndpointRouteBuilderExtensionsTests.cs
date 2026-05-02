@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using KF.Metrics;
-using KF.Metrics.AspNet;
+using KoreForge.Metrics;
+using KoreForge.Metrics.AspNet;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Routing.Patterns;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace KF.Metrics.AspNet.Tests;
+namespace KoreForge.Metrics.AspNet.Tests;
 
 public class MonitoringEndpointRouteBuilderExtensionsTests
 {

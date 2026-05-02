@@ -1,9 +1,9 @@
-using KF.Metrics.Flow;
+using KoreForge.Metrics.Flow;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace KF.Metrics.AspNet;
+namespace KoreForge.Metrics.AspNet;
 
 public static class FlowEndpointRouteBuilderExtensions
 {

@@ -1,23 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>KF.Metrics.AspNet</AssemblyName>
-    <RootNamespace>KF.Metrics.AspNet</RootNamespace>
+    <AssemblyName>KoreForge.Metrics.AspNet</AssemblyName>
+    <RootNamespace>KoreForge.Metrics.AspNet</RootNamespace>
     <IsPackable>true</IsPackable>
     <PackageId>KoreForge.Metrics.AspNet</PackageId>
     <Description>ASP.NET Core opt-in endpoints and controllers for KoreForge Monitoring.</Description>
     <PackageTags>monitoring;metrics;aspnet;observability</PackageTags>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
-
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="KoreForge.Metrics" Version="0.0.10-alpha" />
+    <PackageReference Include="KoreForge.Metrics" Version="1.0.1-alpha" />
   </ItemGroup>
-
 </Project>

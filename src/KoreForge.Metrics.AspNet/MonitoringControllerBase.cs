@@ -1,8 +1,8 @@
 using System;
-using KF.Metrics;
+using KoreForge.Metrics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KF.Metrics.AspNet;
+namespace KoreForge.Metrics.AspNet;
 
 /// <summary>
 /// Provides a reusable base for manually created monitoring controllers without registering routes by default.

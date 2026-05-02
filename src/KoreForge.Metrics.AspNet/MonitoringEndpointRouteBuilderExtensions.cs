@@ -1,9 +1,9 @@
 using System;
-using KF.Metrics;
+using KoreForge.Metrics;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 
-namespace KF.Metrics.AspNet;
+namespace KoreForge.Metrics.AspNet;
 
 public static class MonitoringEndpointRouteBuilderExtensions
 {
